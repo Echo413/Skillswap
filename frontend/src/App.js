@@ -14,7 +14,7 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (
-    <Router basename="/Skillswap">
+    <Router>
       <AppRoutes
         isAuthenticated={isAuthenticated}
         setIsAuthenticated={setIsAuthenticated}
