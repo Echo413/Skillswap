@@ -1,0 +1,344 @@
+.Profile {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  background-image: url('/public/images/Dashboard.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-y: auto;
+}
+.profile-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000000FF 0%, #000000CC 25%, #00000080 75%);
+  backdrop-filter: blur(32px);
+  z-index: 0;
+  pointer-events: none;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background: rgb(42, 0, 92);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #667ae2;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+.ProfileImageSection{
+  display: flex;
+  width: 90%; 
+  height: 300px; 
+  background: url('/public/images/Profile.png') center/cover no-repeat;
+  border-radius: 0px 0px 0px 0px; 
+  z-index: 1;
+  align-self: center;
+  margin-top: 24px;
+  backdrop-filter: blur(24px);
+  justify-content: center;
+}
+.profileImageTint{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #15004480;
+  backdrop-filter: blur(8px);
+  z-index: 0;
+  pointer-events: none;
+}
+.profileIcon{
+    width: 112px;
+    height: 112px;
+    background: url('/public/images/icons/user.png') center/cover no-repeat;
+    z-index: 1;
+}
+.profile{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+}
+.profileUsername{
+  font-family: Manrope;
+  font-size: 32px; 
+  font-weight: 900; 
+  color: #0099ff;
+}
+.profileUserTitle{
+  font-family: Manrope;
+  font-size: 18px; 
+  font-weight: 400; 
+  color: #fff; 
+  margin-top: -15px;
+}
+.profileNavbar {
+  width: 90%; 
+  height: 40px; 
+  background: rgba(12, 9, 55, 0.4); 
+  border-radius: 10px; 
+  z-index: 1;
+  align-self: center;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+}
+.profileNavbarButtonSelected {
+  width: 332px; 
+  height: 32px; 
+  padding: 0 12px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: Inter; 
+  font-size: 14px; 
+  font-weight: 700; 
+  color: #FFFFFFFF;
+  background: #9B78ED33; 
+  opacity: 1; 
+  border: none; 
+  border-radius: 6px; 
+}
+.profileNavbarButton {
+  width: 332px; 
+  height: 32px; 
+  padding: 0 12px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: Inter; 
+  font-size: 14px; 
+  font-weight: 700; 
+  color: #FFFFFFFF;
+  background: transparent; 
+  opacity: 1; 
+  border: none; 
+  border-radius: 6px; 
+  cursor: pointer;
+}
+.AboutMe{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    z-index: 1;
+    margin-top: 24px;
+    flex-direction: column;
+}
+.ProfileReviews{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  z-index: 1;
+  margin-top: 24px;
+  flex-direction: column;
+}
+.ProfileSkills{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  z-index: 1;
+  margin-top: 24px;
+  flex-direction: column;
+}
+.ProfileSkillsHeader{
+  font-family: Manrope; 
+  font-size: 30px; 
+  line-height: 36px; 
+  font-weight: 700; 
+  color: #F3F4F6FF; 
+  margin-left: 24px;
+}
+.AboutMeHeader {
+  font-family: Manrope; 
+  font-size: 30px; 
+  line-height: 36px; 
+  font-weight: 700; 
+  color: #F3F4F6FF; 
+  margin-left: 24px;
+}
+.AboutMeDescSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.profileCard{
+  width: 660px; 
+  height: 216px;
+  background: rgba(12, 9, 55, 0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #00000000;
+  border-style: solid;
+  min-width: 212px;
+  min-height: 118px;  
+  overflow-wrap: break-word;
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileCard-icon{
+  width: 100%; 
+  height: 44px; 
+  z-index: 1;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.Profilecard-title {
+  font-family: Manrope; 
+  font-size: 20px; 
+  line-height: 28px; 
+  font-weight: 600; 
+  color: #FFFFFFFF; 
+  margin: 0 24px;
+}
+.ProfileCardIcon {
+  width: 24px; 
+  height: 24px; 
+  fill: #5393FAFF; 
+  z-index: 2;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.Profilecard-text {
+  margin: 0 24px;
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: #BDC1CAFF; 
+}
+.interestSection{ 
+  width: 96%; 
+  height: 180px; 
+  background: rgba(12, 9, 55, 0.4);
+  border-radius: 10px; 
+  align-self: center;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.interestSectionList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.Interest{
+  height: 36px; 
+  background: #5393FA33; /* primary-500 */
+  border-radius: 9999px; 
+  margin-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+}
+.InterestText {
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 20px; 
+  font-weight: 500; 
+  color: #5393FAFF; 
+}
+.ProfileSkillCard{
+  width: 330px; 
+  height: 336px;
+  background: rgba(12, 9, 55, 0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #00000000;
+  border-style: solid;
+  min-width: 212px;
+  min-height: 158px;  
+  overflow-wrap: break-word;
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.ProfileSkillAdd{
+  font-family: Inter;
+  font-size: 22px; 
+  line-height: 17px; 
+  font-weight: 600; 
+  color: #fff; 
+  margin: 10px 0;
+}
+.ProfileSkillAddInputbox{
+  width: 246px; 
+  height: 36px; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  background: rgba(155, 120, 237, 0.25); 
+  backdrop-filter: blur(12px);
+  border-radius: 6px; 
+  border-width: 1px; 
+  border-color: rgba(155, 120, 237, 0.6); 
+  border-style: solid; 
+  outline: none; 
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.ProfileSkillAddInputbox:hover{
+  background: rgba(155, 120, 237, 0.35);
+  border-color: rgba(155, 120, 237, 0.9);
+}
+
+.ProfileSkillAddInputbox:focus{
+  background: rgba(155, 120, 237, 0.45);
+  border-color: #9B78EDFF;
+  color: #fff;
+}
+
+.ProfileSkillAddInputbox:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.ProfileSkillAddLabel{
+  font-family: Inter;
+  font-size: 14px; 
+  line-height: 17px; 
+  font-weight: 600; 
+  color: #fff; 
+  margin: 10px 0;
+}
+.profileReviewCard{
+  width: 440px; 
+  height: 216px;
+  background: rgba(12, 9, 55, 0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #00000000;
+  border-style: solid;
+  min-width: 212px;
+  min-height: 118px;  
+  overflow-wrap: break-word;
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ProfileReviewCardIcon{
+  background: url('/public/images/icons/user.png') center/cover no-repeat;
+  width: 52px; 
+  height: 52px; 
+  z-index: 2;
+}

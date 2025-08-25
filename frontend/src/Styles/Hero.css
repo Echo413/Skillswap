@@ -1,0 +1,143 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+#App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Manrope;
+}
+.Hero{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('/public/images/Home.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Section {
+  display: flex;
+  background: transparent;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  height: 500px;
+  z-index: 0;
+  overflow: hidden;
+  align-items: center;
+}
+
+.tint {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(0deg, #000000FF 0%, #000000CC 50%, #00000080 100%); 
+}
+.Hero-Container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  gap: 24px;
+}
+.header {
+  width: 640px; 
+  font-family: Manrope; 
+  font-size: 48px; 
+  line-height: 60px; 
+  font-weight: 800; 
+  color: rgb(202, 173, 212);
+  z-index: 2;
+  text-align: center;
+}
+
+
+.dashboard-menu-item{
+  cursor: pointer; 
+}
+
+.text {
+  font-family: Inter; 
+  font-size: 18px; 
+  line-height: 28px; 
+  font-weight: 400; 
+  color: #BDC1CAFF; 
+  z-index: 2;
+}
+.Buttons-Container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.Sign-up-Button, 
+.Learn-More-Button {
+  font-family: Inter; 
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.Sign-up-Button {
+  background: #6529fd;
+  color: #fff;
+}
+
+.Sign-up-Button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(108, 99, 255, 0.6);
+}
+
+.Learn-More-Button {
+  background: transparent;
+  color: #6529fd;
+  border: 2px solid #6529fd;
+}
+
+.Learn-More-Button::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, rgba(108,99,255,0.2), rgba(108,99,255,0));
+  transition: left 0.4s ease;
+}
+
+.Learn-More-Button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(108, 99, 255, 0.3);
+}
+
+.Learn-More-Button:hover::after {
+  left: 100%;
+}

@@ -1,0 +1,294 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+#App{
+  width: 100%;
+  height: 100%;
+}
+.Signup-Section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/public/images/Login.png') center center/cover no-repeat;
+  position: relative; 
+}
+.Signup-tint {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(0deg, rgba(82, 0, 176, 0.114) 0%, rgba(0, 8, 70, 0.545) 25%, #0000009e 75%);
+}
+.Signup-Card {
+    position: relative;
+    width: 35%; 
+    height: 85%;
+    background: rgba(30,33,40,0.25);
+    border-radius: 16px; 
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(12px); 
+    flex-shrink: 0;
+    min-width: 450px;
+    max-width: 420px;
+}
+.Signup-Header {
+  position: absolute; 
+  font-family: Manrope;
+  font-size: 25px; 
+  line-height: 36px; 
+  font-weight: 700; 
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.Signup-text {
+  position: absolute; 
+  margin-top: 70px;
+  width: 302px;
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 20px; 
+  font-weight: 400; 
+  color: #BDC1CAFF; 
+}
+
+.Signup-textbox-email {
+  position: absolute; 
+  margin-top: 120px;
+  opacity: 1; 
+}
+.Signup-textbox-email input {
+  margin-top: 10px;
+  width: 302px; 
+  height: 49px; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  background: #323743FF; 
+  border-radius: 6px; 
+  border-width: 1px; 
+  border-color: #323743FF; 
+  border-style: solid; 
+  outline: none; 
+}
+.Signup-textbox-email label {
+  display: block;
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 500; 
+  color: white;
+}
+
+.Signup-textbox-email input:hover {
+  color: #BDC1CAFF; 
+  background: #323743FF; 
+  border-color: #323743FF; 
+}
+
+.Signup-textbox-email input:focused {
+  color: #BDC1CAFF; 
+  background: #323743FF; 
+  border-color: #323743FF; 
+}
+
+.Signup-textbox-email input:disabled {
+  color: #BDC1CAFF;
+  background: #323743FF;
+  border-color: #323743FF;
+}
+.Signup-textbox-email :disabled + .icon, .Login-textbox-email :disabled + .icon + .icon {
+  fill: #BDC1CAFF;
+}
+
+.Signup-textbox-password {
+  position: absolute; 
+  margin-top: 220px;
+  opacity: 1; 
+}
+.Signup-textbox-password input {
+  margin-top: 10px;
+  width: 302px; 
+  height: 49px; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  background: #323743FF; 
+  border-radius: 6px; 
+  border-width: 1px; 
+  border-color: #323743FF; 
+  border-style: solid; 
+  outline: none; 
+}
+.Signup-textbox-password label {
+  display: block;
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 500; 
+  color: white;
+}
+
+.Signup-textbox-password input:hover {
+  color: #BDC1CAFF; 
+  background: #323743FF; 
+  border-color: #323743FF; 
+}
+
+.Signup-textbox-password input:focused {
+  color: #BDC1CAFF; 
+  background: #323743FF; 
+  border-color: #323743FF; 
+}
+
+.Signup-textbox-password input:disabled {
+  color: #BDC1CAFF;
+  background: #323743FF;
+  border-color: #323743FF;
+}
+.Signup-textbox-password :disabled + .icon, .Login-textbox-password :disabled + .icon + .icon {
+  fill: #BDC1CAFF;
+}
+
+.Signup-Button {
+  margin-top: 320px;
+  position: absolute; 
+  width: 302px; 
+  height: 35px;
+  padding: 0 12px;                                                                                                                                                                                                                                                                                                      
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 500; 
+  color: #FFFFFFFF; 
+  background: rgba(170, 0, 255, 0.619);
+  opacity: 1; 
+  border: none; 
+  border-radius: 5px; 
+}
+
+.Signup-Button:hover {
+  color: #FFFFFFFF;
+  background: rgba(93, 13, 132, 0.619);
+}
+
+.Signup-Button on:hover:active {
+  color: #FFFFFFFF; 
+  background: rgba(25, 1, 37, 0.619);
+}
+
+.Signup-Button :disabled {
+  opacity: 0.4; 
+}
+.Option-Text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 370px;
+  font-family: Inter; 
+  font-size: 16px; 
+  line-height: 24px; 
+  font-weight: 400; 
+  color: #BDC1CAFF;
+}
+.Google-Sign-Up {
+  margin-top: 400px;
+  width: 302px; 
+  height: 40px; 
+  padding: 0 12px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 500; 
+  color: #F3F4F6FF;
+  background: #000000FF; 
+  opacity: 1; 
+  border-radius: 10px; 
+  border-width: 1px; 
+  border-color: #323743FF;
+  border-style: solid; 
+}
+.Google-Sign-Up .icon {
+  width: 20px; 
+  height: 20px; 
+  fill: #F3F4F6FF; 
+}
+
+.Google-Sign-Up:hover {
+  color: #F3F4F6FF; 
+  background: #000000FF; 
+}
+
+.Google-Sign-Up:hover:active {
+  color: #F3F4F6FF; 
+  background: #000000FF;
+}
+
+.Google-Sign-Up:disabled {
+  opacity: 0.4; 
+}
+.Google-Sign-In-Icon{
+  background: url('/public/images/icons/google.png') center center/cover no-repeat;
+  width: 17px;
+  height: 17px;
+  margin: 5px 10px;
+}
+.Login-Text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 465px;
+  font-family: Inter; /* Body */
+  font-size: 14px; 
+  line-height: 20px; 
+  font-weight: 400; 
+  color: #BDC1CAFF; /* neutral-400 */
+}
+.Login-Sub-Text {
+  color: #9B78EDFF;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.Signup-Skills-Dropdown{
+  margin-top: 10px;
+  width: 302px; 
+  height: 49px; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  background: #323743FF; 
+  border-radius: 6px; 
+  border-width: 1px; 
+  border-color: #323743FF; 
+  border-style: solid; 
+  outline: none; 
+  color: #fff;
+}

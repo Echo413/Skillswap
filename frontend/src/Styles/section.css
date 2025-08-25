@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 124px;
+  width: 100%;
+  min-height: 100vh; 
+  padding-top: 116px;  
+  background: 
+    linear-gradient(to bottom, #000000FF, #000000CC, #00000080, transparent),
+    url('/public/images/Login.png') center/cover no-repeat;
+  border-radius: 0px; 
+}
+.Header {
+  font-family: Manrope;
+  font-size: 36px; 
+  line-height: 40px; 
+  font-weight: 700; 
+  color: rgb(173, 169, 202);
+  z-index: 2;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: center; 
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.card{
+  position: relative;
+  flex: 1 1 411px; 
+  max-width: 411px; 
+  height: 214px;
+  background: rgba(26, 3, 49, 0.3);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #00000000;
+  border-style: solid;
+  margin: 0; 
+  min-width: 0;  
+  overflow-wrap: break-word;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card:nth-child(1).show { transition-delay: 0.1s; }
+.card:nth-child(2).show { transition-delay: 0.3s; }
+.card:nth-child(3).show { transition-delay: 0.5s; }
+.card-icon {
+  position: absolute; 
+  top: 21px; 
+  left: 21px; 
+  width: 48px; 
+  height: 48px; 
+  background: rgba(30,33,40,0.1);
+  backdrop-filter: blur(2px); 
+  border-radius: 9999px; 
+  z-index: 1;
+}
+.card-title {
+  position: absolute; 
+  top: 87px; 
+  left: 21px; 
+  font-family: Manrope; 
+  font-size: 20px; 
+  line-height: 28px; 
+  font-weight: 600; 
+  color: #FFFFFFFF; 
+}
+.icon {
+  position: absolute; 
+  width: 24px; 
+  height: 24px; 
+  left: 6px;
+  top: 6px;
+  fill: #5393FAFF; 
+  z-index: 2;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.card-text {
+  position: absolute; 
+  top: 123px; 
+  left: 21px; 
+  width: 369px; 
+  font-family: Inter;
+  font-size: 16px; 
+  line-height: 24px; 
+  font-weight: 400; 
+  color: #BDC1CAFF; 
+}
+.Footer {
+  width: 100%;
+  height: 60px;
+  background: rgba(20, 3, 44, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 20px;
+  color: #BDC1CAFF;
+  backdrop-filter: blur(24px);
+  justify-self: flex-end;
+}
