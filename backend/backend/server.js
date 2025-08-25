@@ -24,20 +24,13 @@ app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
-  store: MongoStore.create({
-    mongoUrl: process.env.MONGO_URI
-  }),
+  store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
   cookie: {
-    httpOnly: true,
-    secure: true, 
-    sameSite: "none" 
+    httpOnly: true,     // prevents JS from reading it
+    secure: true,       // MUST be true for HTTPS frontend
+    sameSite: "none"    // allows cross-origin cookies
   }
 }));
-
-store: MongoStore.create({
-  mongoUrl: process.env.MONGO_URI
-})
-
 
 app.use("/api/users", userRoutes);
 app.use("/api/skills", skillRoutes);
