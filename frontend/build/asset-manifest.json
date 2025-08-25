@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Skillswap/static/css/main.0d871952.css",
-    "main.js": "/Skillswap/static/js/main.c061b7f2.js",
+    "main.js": "/Skillswap/static/js/main.6476da69.js",
     "static/js/453.a045f14a.chunk.js": "/Skillswap/static/js/453.a045f14a.chunk.js",
     "static/media/Profile.png": "/Skillswap/static/media/Profile.08872e672b8cb98e96d2.png",
     "static/media/Login.png": "/Skillswap/static/media/Login.c82e023cfbc108f37315.png",
@@ -11,11 +11,11 @@
     "static/media/user.png": "/Skillswap/static/media/user.961568814dceb733c85a.png",
     "index.html": "/Skillswap/index.html",
     "main.0d871952.css.map": "/Skillswap/static/css/main.0d871952.css.map",
-    "main.c061b7f2.js.map": "/Skillswap/static/js/main.c061b7f2.js.map",
+    "main.6476da69.js.map": "/Skillswap/static/js/main.6476da69.js.map",
     "453.a045f14a.chunk.js.map": "/Skillswap/static/js/453.a045f14a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d871952.css",
-    "static/js/main.c061b7f2.js"
+    "static/js/main.6476da69.js"
   ]
 }
