@@ -34,6 +34,9 @@ app.use(session({
   }
 }));
 
+store: MongoStore.create({
+  mongoUrl: process.env.MONGO_URI
+})
 
 
 app.use("/api/users", userRoutes);
