@@ -1,7 +1,6 @@
 import express from "express";
 import Learnskill from "../models/Learnskill.js";
 import TeachSkill from "../models/Teachskill.js";
-import { useReducer } from "react";
 const router = express.Router();
 
 
