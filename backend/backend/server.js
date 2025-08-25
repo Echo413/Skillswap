@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://skillswap-qmb5.onrender.com", 
+  origin: "https://skillswap-frontend-mgic.onrender.com", 
   credentials: true
 }));
 
