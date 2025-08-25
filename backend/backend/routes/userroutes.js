@@ -1,6 +1,5 @@
 import express from "express";
 import User from "../models/user.js";
-import { useReducer } from "react";
 const router = express.Router();
 
 router.post('/finish', async(req, res) =>{
