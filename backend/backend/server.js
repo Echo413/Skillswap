@@ -31,7 +31,7 @@ app.use(session({
     sameSite: "none"    // allows cross-origin cookies
   }
 }));
-
+app.set('trust proxy', 1); // trust first proxy
 app.use("/api/users", userRoutes);
 app.use("/api/skills", skillRoutes);
 
